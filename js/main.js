@@ -31,19 +31,24 @@ class Circle {
         if (this.posX + this.radio > window_width) {
             this.posX = window_width - this.radio; // Ajusta la posición justo dentro del borde
             this.dx = -this.dx;
+            this.color=randomColor();
         }
         if (this.posX - this.radio < 0) {
             this.posX = this.radio; // Evita que el círculo se quede atorado en el borde
             this.dx = -this.dx;
+            this.color=randomColor();
         }
         if (this.posY + this.radio > window_height) {
             this.posY = window_height - this.radio;
             this.dy = -this.dy;
+            this.color=randomColor();
         }
         if (this.posY - this.radio < 0) {
             this.posY = this.radio;
             this.dy = -this.dy;
+            this.color=randomColor();
         }
+        
     }
 
     draw(Context) {
