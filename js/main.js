@@ -61,7 +61,7 @@ class Circle {
 }
 
 function radioRandom() {
-    return Math.floor(Math.random() * 50 + 10); // Radio más pequeño para manejar más círculos
+    return Math.floor(Math.random() * 75 + 25); // Radio más pequeño para manejar más círculos
 }
 
 function randomPosX() {
@@ -80,7 +80,7 @@ function randomColor() {
 // Crear un arreglo de 10 círculos
 let circles = [];
 for (let i = 0; i < 10; i++) {
-    circles.push(new Circle(randomPosX(), randomPosY(), radioRandom(), randomColor(), "Tec " + i, Math.random() * 4 + 1));
+    circles.push(new Circle(randomPosX(), randomPosY(), radioRandom(), randomColor(), "Tec " + i, Math.random() * 5 + 1));
 }
 
 function updateCircle() {
