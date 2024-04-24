@@ -48,7 +48,7 @@ class Circle {
 
     draw(Context) {
         Context.beginPath();
-        Context.font = "20px Arial"; // Tamaño de fuente más pequeño para evitar superposición
+        Context.font = "20px Consolas"; // Tamaño de fuente más pequeño para evitar superposición
         Context.textAlign = "center";
         Context.textBaseline = "middle";
         Context.fillText(this.text, this.posX, this.posY);
